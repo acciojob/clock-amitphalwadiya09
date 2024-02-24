@@ -14,7 +14,7 @@ function timeshow()
    let datetime=`${month}/${day}/${year}`;
    let time=converttime(hrs,min,sec)
    
-   para.innerHTML=`${datetime},${time}`
+   para.innerHTML=`${datetime}, ${time}`
 }
 
 function converttime(hrs,min,sec)
