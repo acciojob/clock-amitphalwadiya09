@@ -9,7 +9,10 @@ function timeshow()
    let hrs=d.getHours();
    let min=d.getMinutes();
    let sec=d.getSeconds();
-
+   if(min<10)
+   {
+	   min='0'+min;
+   }
    let datetime=`${month}/${day}/${year}`;
    let time=converttime(hrs,min,sec)
    
