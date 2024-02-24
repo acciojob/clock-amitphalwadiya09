@@ -1,4 +1,4 @@
-let para=document.querySelector(".timer")
+let para=document.querySelector("#timer")
 function timeshow()
 {
     const d = new Date();
