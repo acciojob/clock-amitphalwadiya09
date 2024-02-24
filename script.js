@@ -1,4 +1,3 @@
-//your JS code here. If required.
 let para=document.querySelector(".timer")
 function timeshow()
 {
@@ -21,16 +20,21 @@ function converttime(hrs,min,sec)
 {
     if(hrs==0)
     {
-      return `12:${min}:${sec} PM`
+      return `12:${min}:${sec} AM`
     }
     else if(hrs>12)
     {
      return `${hrs-12}:${min}:${sec} PM`
     }
+    else if(hrs==12)
+    {
+        return `${12}:${min}:${sec} PM`
+    }
     else
     {
      return `${hrs}:${min}:${sec} PM`
     }
+
 }
 
 setInterval(timeshow,1000)
